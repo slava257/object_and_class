@@ -1,6 +1,6 @@
+package lesson_object_and_class;
+
 public class Main {
-
-
     public static void main(String[] args) {
         // 1. Необходимо создать класс Book, который содержит в себе данные об имени, авторе и годе публикации. Типы полей должны быть String, Author (который мы создадим  в п. 2) и int.
         //2. Необходимо создать класс Author, который содержит в себе данные об имени и фамилии автора.
@@ -14,6 +14,7 @@ public class Main {
         //    Требуется создать отдельный класс для запуска приложения и объявить метод main в нем.
         //
         //7. В том же методе main изменить год публикации одной из книг с помощью сеттера.
+
         Author author = new Author("Andrzej","Sapkowski");
         Book book = new Book("the witcher",author,1986);
         Author author1 = new Author("Carlos","Castaneda");
@@ -25,4 +26,4 @@ public class Main {
         book.setYearPublishing(1980);
         System.out.println("(book.getYearPublishing()+\" \"+book.getName()) = " + (book.getYearPublishing() + " " + book.getName()));
     }
-    }
+}
