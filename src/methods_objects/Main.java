@@ -1,6 +1,6 @@
+package methods_objects;
+
 public class Main {
-
-
     public static void main(String[] args) {
         // 1. Необходимо создать класс Book, который содержит в себе данные об имени, авторе и годе публикации. Типы полей должны быть String, Author (который мы создадим  в п. 2) и int.
         //2. Необходимо создать класс Author, который содержит в себе данные об имени и фамилии автора.
@@ -18,11 +18,10 @@ public class Main {
         Book book = new Book("the witcher",author,1986);
         Author author1 = new Author("Carlos","Castaneda");
         Book book1 = new Book("Don Juan's teachings",author1,1960);
-        System.out.println("(author.getName()+\" \"+author.getName()) = " + (author.getName() + " " + author.getSurname()));
-        System.out.println("(book.getYearPublishing()+\" \"+book.getName()) = " + (book.getYearPublishing() + " " + book.getName()));
-        System.out.println("(author1.getName()+\" \"+author1.getName()) = " + (author1.getName() + " " + author1.getSurname()));
-        System.out.println("(book1.getYearPublishing()+\" \"+book1.getName()) = " + (book1.getYearPublishing() + " " + book1.getName()));
         book.setYearPublishing(1980);
         System.out.println("(book.getYearPublishing()+\" \"+book.getName()) = " + (book.getYearPublishing() + " " + book.getName()));
+        System.out.println(book);
+        System.out.println(book1);
+        System.out.println(book.equals(book));
     }
-    }
+}
